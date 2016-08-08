@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">About Page Here</div>
+                <div class="title">Thanks @bmlarson! </div>
             </div>
         </div>
     </body>
