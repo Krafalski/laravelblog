@@ -19,7 +19,7 @@ class PostsController extends Controller
     public function show($id)
     {
       $post = Post::find($id);
-      // $post = DB::table('posts')->find($id);
-      return $post;
+       //$post = DB::table('posts')->find($id);
+      return view ('posts.show', compact('post'));
     }
 }
