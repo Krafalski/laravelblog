@@ -29,4 +29,5 @@ Route::get('/data', 'PagesController@home');
 Route::get('/aboutAnotherway', 'PagesController@about');//see PagesController
 
 
-Route::get('/cards', 'CardsController@index');
+Route::get('/posts', 'PostsController@index');
+Route::get('/posts/{id}', 'PostsController@show');
