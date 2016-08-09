@@ -18,3 +18,15 @@ Route::get('/', function () {
 Route::get('/about', function(){
   return view('pages.about');
 });
+
+Route::get('/test', function(){
+  $people =['Taylor', 'Matt', 'Jeffrey'];
+
+  return view('pages.test', compact('people'));
+});
+
+Route::get('/data', 'PagesController@home');
+Route::get('/aboutAnotherway', 'PagesController@about');//see PagesController
+
+
+Route::get('/cards', 'CardsController@index');
