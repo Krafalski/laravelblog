@@ -2,15 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use App\Post;
+use App\Comment;
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Http\Controllers\Controller;
 
 class CommentsController extends Controller
 {
-    public function store(Request $request)
+    public function store(Request $request, Post $post)
     {
-      return $request->all();
+      return $post;
+      // return $request->all(); //json view of posted comment
+      // $comment = new Comment;
+      //
+      //
+      // $comment->comment = $request->body;
+      //
+      // $post->comments()->save($comment);
+      //
+      // return back();
     }
 }

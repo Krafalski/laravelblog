@@ -15,7 +15,7 @@
     <form method="POST" action="/posts/{{ $post->id }}/comment">
       <div class="form-group">
 
-        <!-- <h4> Your name:</h4><input type="hidden" class="form-control" name="commentator" value="Karolin"></input> -->
+        <h4> Your name:</h4><input type="hidden" class="form-control" name="commentator" value="Karolin"></input>
         <h4> Your comment:</h4><textarea class="form-control" name="comment"></textarea>
       </div>
       <input type="hidden" name="_token" value="{{ csrf_token() }}">
