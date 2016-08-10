@@ -31,3 +31,5 @@ Route::get('/aboutAnotherway', 'PagesController@about');//see PagesController
 
 Route::get('/posts', 'PostsController@index');
 Route::get('/posts/{id}', 'PostsController@show');
+
+Route::post('/posts/{id}/comment', 'CommentsController@store');
